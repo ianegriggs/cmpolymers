@@ -1,0 +1,74 @@
+/* UNIVERSAL FIXES */
+
+* {	
+-webkit-box-sizing=border-box;
+-moz-box-sizing=border-box;
+box-sizing=border-box;
+}
+
+.clearfix:after {	
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+/* CSS Elements */
+
+.wrapper {
+	width: 90%
+	minimum-height: 90%;
+	border: 1px solid green;
+}
+
+body {	
+background-color: aqua;
+background-image: url(images/bg-homepage.gif) center;
+}
+
+.header {
+	display: block;
+
+}
+
+nav {
+	border: 1px dashed red;
+	width: 40%;
+	background: white;
+	float: left;
+	clear: both;
+
+}
+
+#logo {
+	width: 100px;
+	height: 100px;
+	background: orange;
+}
+
+#about-us {
+	border: 1px solid green;
+
+}
+
+#what-we-do {
+	border: 1px solid green;
+
+}
+
+#contact {
+	border: 1px solid green;
+
+}
+
+footer {	
+	text-align: right;
+	border: 1px dashed black;
+	}
+
+section {
+	border: 1px dashed black;
+	width: 100px;
+}
