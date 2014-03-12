@@ -28,16 +28,12 @@ background-color: aqua;
 background-image: url(images/bg-homepage.gif) center;
 }
 
-.header {
-	display: block;
-
-}
-
 nav {
 	border: 1px dashed red;
 	width: 40%;
 	background: white;
-	float: left;
+	display: block;
+	float: right;
 	clear: both;
 
 }
