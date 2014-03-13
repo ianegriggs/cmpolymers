@@ -25,16 +25,19 @@ box-sizing=border-box;
 
 body{	
 background-color: aqua;
-background-image: url(images/bg-homepage.png);
+background-image: url(images/Recycled_HDPE_Flakes.jpg);
+background-size: cover;
+
+
 }
 
-#moving-background {
+/*#moving-background {
 	background-image: url(images/bg-homepage.png);
 	background-repeat:no-repeat;
 	webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: cover;*/
 }
 
 nav {
@@ -50,7 +53,6 @@ nav {
 #logo {
 	width: 100px;
 	height: 100px;
-	background: orange;
 }
 
 #about-us {
