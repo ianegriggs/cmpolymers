@@ -1,4 +1,4 @@
-/* UNIVERSAL FIXES */
+/* GLOBAL */
 
 * {	
 -webkit-box-sizing=border-box;
@@ -15,20 +15,49 @@ box-sizing=border-box;
 	line-height: 0;
 }
 
-/* CSS Elements */
+/* PAGE */
 
 .wrapper {
 	width: 100%
 	border: 1px solid green;
-	
+}
+
+li {
+	display: inline-block;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	border: 2px dotted orange;
+}
+
+#social-buttons {
+	border: 2px solid red;
+	float: right;
+	clear: right;
+	margin: 0px 300px 120px 0px;
+}
+
+nav {
+	border: 2px solid green;
+	float: right;
+	margin: 0px 200px 0px 0px;
+}
+
+iframe {
+	height: 238px;
+	width: 390px;
+	overflow: hidden;
 }
 
 body{	
 background-color: aqua;
 background-image: url(images/Recycled_HDPE_Flakes.jpg);
 background-size: cover;
-
-
+max-width: 100%;
 }
 
 /*#moving-background {
@@ -37,66 +66,10 @@ background-size: cover;
 	webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;*/
-}
-
-nav {
-	border: 1px dashed red;
-	width: 40%;
-	background: white;
-	display: block;
-	float: right;
-	clear: both;
-
-}
+        background-size: cover;
+}*/
 
 #logo {
 	width: 100px;
 	height: 100px;
-}
-
-#about-us {
-	height: 100px;
-	margin-bottom: 10px;
-	width: 30%;
-}
-
-.top-buttons {
-	text-align: center;
-	padding-top: 30px;
-	height: 100px;
-}
-
-.buttons-two-of-three {
-	text-align: center;
-	width: 600px;
-	margin-left: 320px;
-}
-
-#what-we-do {
-	width: 30%;
-}
-
-#contact-us {
-	border: 1px solid red;
-	margin-bottom: 10px;
-	width: 30%;
-}
-
-footer {	
-	text-align: right;
-	}
-
-h1 {
-	text-align: center;
-}
-
-#visual-aid {
-	float: right;
-}
-
-
-section {
-	border: 1px dashed black;
-	width: 100px;
 }
