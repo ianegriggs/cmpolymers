@@ -65,6 +65,7 @@ header {
 nav {
 	border: 2px solid green;
 	float: right;
+	clear: both;
 	margin: 0px 200px 0px 0px;
 }
 
