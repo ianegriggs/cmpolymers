@@ -17,6 +17,27 @@ box-sizing=border-box;
 
 /* PAGE */
 
+#crushed-bottles-background {
+	background-color: aqua;
+	background-image: url(images/crystal-clear-background.jpg);
+	background-size: cover;
+	max-width: 100%;
+}
+
+#water-bottles-background {
+	background-color: aqua;
+	background-image: url(images/water-bottles.jpg);
+	background-size: cover;
+	max-width: 100%;
+}
+
+#blue-abstract-background {
+	background-color: aqua;
+	background-image: url(images/blue-abstract-background.png);
+	background-size: cover;
+	max-width: 100%;
+}
+
 .wrapper {
 	width: 100%
 	border: 1px solid green;
