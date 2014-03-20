@@ -17,6 +17,7 @@ box-sizing=border-box;
 
 /* PAGE */
 
+
 #crushed-bottles-background {
 	background-color: aqua;
 	background-image: url(images/crystal-clear-background.jpg);
@@ -36,6 +37,32 @@ box-sizing=border-box;
 	background-image: url(images/blue-abstract-background.png);
 	background-size: cover;
 	max-width: 100%;
+
+}
+
+#alternate-recycle-background {
+	background-color: aqua;
+	background-image: url(images/alternate-recycle-background.png);
+	background-size: cover;
+	max-width: 100%;
+}
+
+#flakes-background {
+	background-color: aqua;
+	background-image: url(images/Recycled_HDPE_Flakes.jpg);
+	background-size: cover;
+	max-width: 100%;
+}
+
+#moving-background {
+	background-image: url(images/optical-sorter.gif);
+	background-repeat:no-repeat;
+	background-size: cover;
+	webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-color: yellow;
+        background-position: center;
 }
 
 .wrapper {
@@ -70,28 +97,14 @@ nav {
 }
 
 iframe {
-	height: 238px;
-	width: 390px;
 	overflow: hidden;
 }
 
 body{	
-background-color: aqua;
-background-image: url(images/Recycled_HDPE_Flakes.jpg);
-background-size: cover;
 max-width: 100%;
 }
 
-/*#moving-background {
-	background-image: url(images/bg-homepage.png);
-	background-repeat:no-repeat;
-	webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}*/
-
 #logo {
-	width: 100px;
-	height: 100px;
+	width: 70px;
+	height: 70px;
 }
