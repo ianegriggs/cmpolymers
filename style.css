@@ -80,6 +80,7 @@ ul {
 
 header {
 	border: 2px dotted orange;
+	background-color: #ccc;
 }
 
 #social-buttons {
@@ -87,6 +88,40 @@ header {
 	float: right;
 	clear: right;
 	margin: 0px 300px 120px 0px;
+}
+
+/* HOMEPAGE ARROWS */
+
+div .arrows{
+	border: 3px dashed purple;
+	width: 300px;
+	height: 265px;
+}
+
+div #arrow-top {
+	border: 3px dashed purple;
+	width: 220px;
+	height: 230px;
+	margin: 0 auto;
+	padding-left: 20px;
+}
+
+div #right-and-left-arrows {
+	border: 3px dotted aqua;
+}
+
+span .arrows #arrow-left {
+	height: 300px;
+	width: 300px;
+	border: 3px dotted red;
+}
+
+div #arrow-left {
+	margin-left: 300px;
+}
+
+#arrow-right {
+
 }
 
 nav {
@@ -107,4 +142,16 @@ max-width: 100%;
 #logo {
 	width: 70px;
 	height: 70px;
+}
+
+h1 {
+	color: white;
+}
+
+p {
+	color: white;
+}
+
+h1 p {
+	color: white;
 }
