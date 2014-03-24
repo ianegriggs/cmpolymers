@@ -90,14 +90,18 @@ max-width: 100%;
 header {
 	/*HEADER BACKGROUND
 	/*border: 2px dotted orange;*/
-background: rgb(76,76,76); /* Old browsers */
-background: -moz-linear-gradient(45deg,  rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(76,76,76,1)), color-stop(12%,rgba(89,89,89,1)), color-stop(25%,rgba(102,102,102,1)), color-stop(39%,rgba(71,71,71,1)), color-stop(50%,rgba(44,44,44,1)), color-stop(51%,rgba(0,0,0,1)), color-stop(60%,rgba(17,17,17,1)), color-stop(76%,rgba(43,43,43,1)), color-stop(91%,rgba(28,28,28,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(45deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(45deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(45deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* IE10+ */
-background: linear-gradient(45deg,  rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color: hsl(0,0%,90%);
+  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+  
+  transition: color .2s;
+
+  border-radius: 2px;
 }
 
 nav {
@@ -205,29 +209,35 @@ article {
 
 /* SPRITES FOR HOMEPAGE ARROWS */
 
-#top-arrow {
-	border: 2px dotted red;
-	width: 330px;
-	height: 100px;
-	margin: 0 auto;
-	display: block;
+.container {
+	position: relative;
 }
 
-#bottom-arrows {
+#top-arrow {
 	border: 2px dotted red;
-	height: 450px;
+	position: absolute;
+	width: 330px;
+	height: 100px;
+	top: 200px;
+	left: 550px;
 }
 
 #arrow-left {
 	border: 2px solid green;
+	position: absolute;
 	height: 220px;
 	width: 225px;
+	bottom: 110px;
+	left: 430px;
 }
 
 #arrow-right {
 	border: 2px dashed blue;
+	position: absolute;
 	height: 220px;
 	width: 225px;
+	right: 340px;
+	bottom: 120px;
 }
 
 a.arrow-top-sprite {
@@ -282,6 +292,8 @@ form {
 	padding-bottom: 20px;
 	padding-left: 30px;
 	margin: 0 auto;
+	border: 4px groove blue;
+	border-radius: 30px;
 background: #fcfff4; /* Old browsers */
 background: -moz-linear-gradient(top,  #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(40%,#dfe5d7), color-stop(100%,#b3bead)); /* Chrome,Safari4+ */
@@ -298,6 +310,7 @@ input {
 
 textarea {
 	width: 390px;
+	margin-top: 10px;
 }
 
 #fullname-enter-field {
@@ -339,4 +352,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .hark-player {
 	visibility: hidden;
+}
+
+#type-of-scrap {
+	display: inline;
+}
+
+#cory {
+	margin-left: 500px;
+}
+
+#carl {
+	margin-left: 530px;
 }
