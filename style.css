@@ -244,8 +244,8 @@ div.container {
 	position: absolute;
 	height: 151px;
 	width: 175px;
-	bottom: 125px;
-	left: 390px;
+	bottom: 120px;
+	left: 440px;
 	background: url(images/arrow-left-sprite.png);
 	background-position: -79px -62px;
 }
@@ -262,8 +262,8 @@ div.container {
 	position: absolute;
 	height: 170px;
 	width: 175px;
-	right: 340px;
-	bottom: 120px;
+	right: 395px;
+	bottom: 112px;
 	background: url(images/arrow-right-sprite.png) no-repeat;
 }
 
@@ -386,8 +386,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 h1.slogan {
 	position: absolute;
-	top: 145px;
-	left: 430px;
+	top: 150px;
+	left: 440px;
+	text-align: center;
+	color: black;
+	background: -moz-linear-gradient(45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 77%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(77%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 77%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 77%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 77%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 77%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/*border: 3px solid white;*/
 }
 
 .form-div {
