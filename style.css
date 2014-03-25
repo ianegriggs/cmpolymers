@@ -226,7 +226,7 @@ div.container {
 	overflow: hidden;
 	position: absolute;
 	top: 50px;
-	left: 550px;
+	left: 551px;
     width:  165px;
     height: 95px;
     background: url(images/arrow-top-sprite.png) no-repeat;
@@ -244,8 +244,8 @@ div.container {
 	position: absolute;
 	height: 151px;
 	width: 175px;
-	bottom: 120px;
-	left: 440px;
+	bottom: 160px;
+	left: 450px;
 	background: url(images/arrow-left-sprite.png);
 	background-position: -79px -62px;
 }
@@ -262,8 +262,8 @@ div.container {
 	position: absolute;
 	height: 170px;
 	width: 175px;
-	right: 395px;
-	bottom: 112px;
+	right: 411px;
+	bottom: 153px;
 	background: url(images/arrow-right-sprite.png) no-repeat;
 }
 
@@ -386,7 +386,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 h1.slogan {
 	position: absolute;
-	top: 150px;
+	bottom: 20px;
 	left: 440px;
 	text-align: center;
 	color: black;
