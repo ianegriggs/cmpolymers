@@ -24,6 +24,7 @@ box-sizing=border-box;
 
 body{	
 max-width: 100%;
+margin: 0;
 }
 
 #crushed-bottles-background {
@@ -85,11 +86,14 @@ max-width: 100%;
 #logo {
 	width: 50px;
 	height: 50px;
+	padding-top: 6px;
+	padding-left: 8px;
 }
 
 header {
 	/*HEADER BACKGROUND
 	/*border: 2px dotted orange;*/
+	height: 64px;
   background-color: hsl(0,0%,90%);
   box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
     inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
@@ -100,8 +104,6 @@ header {
     hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
   
   transition: color .2s;
-
-  border-radius: 2px;
 }
 
 nav {
@@ -109,19 +111,23 @@ nav {
 	/*border: 2px solid green;*/
 	float: right;
 	clear: both;
-	margin: 15px 200px 0px 0px;
+	margin: 19px 200px 0px 0px;
+	position: relative;
 }
 
 /*SOCIAL BUTTONS*/
 
 #social-buttons {
 	/*border: 2px solid red;*/
-	display: block;
+	display: inline;
 	width: 80px;
 	height: 40px;
 	float: right;
 	clear: right;
 	margin: 0px 300px 120px 0px;
+	position: absolute;
+	top: 22px;
+	left: 1050px;
 }
 
 a.facebook {
@@ -187,7 +193,6 @@ footer {
 	max-width: 100%;
 	/*border: 3px dotted yellow;*/
 	height: 40px;
-	margin-top: 20px;
 	color: white;
 	background: black;
 }
@@ -209,50 +214,63 @@ article {
 
 /* SPRITES FOR HOMEPAGE ARROWS */
 
-.container {
+div.container {
 	position: relative;
+	height: 500px;
 }
 
 #top-arrow {
-	border: 2px dotted red;
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	position: absolute;
-	width: 330px;
-	height: 100px;
-	top: 200px;
+	top: 50px;
 	left: 550px;
+    width:  165px;
+    height: 95px;
+    background: url(images/arrow-top-sprite.png) no-repeat;
 }
+
+#top-arrow:hover {
+	background-position: -165px 0;
+} 
 
 #arrow-left {
-	border: 2px solid green;
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	position: absolute;
-	height: 220px;
-	width: 225px;
-	bottom: 110px;
-	left: 430px;
+	height: 151px;
+	width: 175px;
+	bottom: 125px;
+	left: 390px;
+	background: url(images/arrow-left-sprite.png);
+	background-position: -79px -62px;
 }
+
+#arrow-left:hover {
+	background-position: -77px -198px;
+} 
 
 #arrow-right {
-	border: 2px dashed blue;
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 	position: absolute;
-	height: 220px;
-	width: 225px;
+	height: 170px;
+	width: 175px;
 	right: 340px;
 	bottom: 120px;
+	background: url(images/arrow-right-sprite.png) no-repeat;
 }
 
-a.arrow-top-sprite {
-    display: block;
-    width:  400px;
-    height: 100px;
-    background: url(images/arrow-top-sprites.png) no-repeat;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-}
-
-a.arrow-top-sprite:hover {
-background-position: -165px 0;
-}    
+#arrow-right:hover {
+	background-position: -10px -165px;
+} 
+   
 
 /*a.arrow-left-sprite {
     display: block;
@@ -364,4 +382,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 #carl {
 	margin-left: 530px;
+}
+
+h1.slogan {
+	position: absolute;
+	top: 145px;
+	left: 430px;
+}
+
+.form-div {
+	height: 500px;
+}
+
+.footer-pushdown {
+	height: 555px;
+}
+
+.psu-footer-pushdown {
+	height: 1000px;
 }
