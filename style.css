@@ -1,4 +1,4 @@
-/* GLOBAL */
+ GLOBAL */
 
 * {	
 -webkit-box-sizing=border-box;
@@ -86,15 +86,15 @@ margin: 0;
 #logo {
 	width: 50px;
 	height: 50px;
-	padding-top: 6px;
-	padding-left: 8px;
+	padding-top: 12px;
+	padding-left: 10px;
 }
 
 header {
 	/*HEADER BACKGROUND
 	/*border: 2px dotted orange;*/
-	height: 64px;
-  background-color: hsl(0,0%,90%);
+	height: 68px;
+  background-color: #050002;
   box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
     inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
     inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
@@ -148,7 +148,7 @@ h1 {
 	/*border: 3px solid white;*/
 	margin: 0 auto;
 	margin-top: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	max-width: 500px;
 }
 
@@ -199,22 +199,38 @@ article {
 
 /* SPRITES FOR HOMEPAGE ARROWS */
 
-div.container {
+.container {
 	position: relative;
-	height: 500px;
+	height: 285px;
+	width: 450px;
+	padding-top: 45px;
+	padding-right: 210px;
+	padding-left: 225px;
+	padding-bottom: 5px;
+	margin: 0 auto;
+	border-radius: 9px;
+
+background: -moz-radial-gradient(center, ellipse cover,  rgba(30,87,153,0.4) 55%, rgba(30,87,153,0.38) 57%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(55%,rgba(30,87,153,0.4)), color-stop(57%,rgba(30,87,153,0.38)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(30,87,153,0.4) 55%,rgba(30,87,153,0.38) 57%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(30,87,153,0.4) 55%,rgba(30,87,153,0.38) 57%,rgba(125,185,232,0) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(30,87,153,0.4) 55%,rgba(30,87,153,0.38) 57%,rgba(125,185,232,0) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(30,87,153,0.4) 55%,rgba(30,87,153,0.38) 57%,rgba(125,185,232,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#661e5799', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ 
 }
+
 
 #top-arrow {
 	display: block;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	position: absolute;
-	top: 50px;
-	left: 551px;
     width:  165px;
     height: 95px;
     background: url(images/arrow-top-sprite.png) no-repeat;
+    margin: 0 auto;
+   
 }
 
 #top-arrow:hover {
@@ -226,13 +242,12 @@ div.container {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	position: absolute;
 	height: 151px;
 	width: 175px;
-	bottom: 160px;
-	left: 450px;
 	background: url(images/arrow-left-sprite.png);
 	background-position: -79px -62px;
+	float: left;
+	margin-left: 50px;
 }
 
 #arrow-left:hover {
@@ -244,12 +259,11 @@ div.container {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	position: absolute;
 	height: 170px;
-	width: 175px;
-	right: 411px;
-	bottom: 153px;
+	width: 150px;
 	background: url(images/arrow-right-sprite.png) no-repeat;
+	float: right;
+	margin-right: 70px;
 }
 
 #arrow-right:hover {
@@ -370,9 +384,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 h1.slogan {
-	position: absolute;
-	bottom: 20px;
-	left: 440px;
 	text-align: center;
 	color: black;
 	background: -moz-linear-gradient(45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 77%, rgba(255,255,255,0) 100%); /* FF3.6+ */
@@ -395,4 +406,26 @@ h1.slogan {
 
 .psu-footer-pushdown {
 	height: 1000px;
+}
+
+#bio {
+	height: 170px;
+	width: 170px;
+	background: white;
+	border: 2px solid blue;
+
+}
+
+#bio-cory {
+	height: 170px;
+	width: 170px;
+	background: white;
+	border: 2px solid blue;
+	float: right;
+	margin-top: 40px;
+	margin-right: 
+}
+
+#height-perspective {
+	height: 600px;
 }

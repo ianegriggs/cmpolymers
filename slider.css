@@ -1,15 +1,15 @@
 #logo {
 	width: 50px;
 	height: 50px;
-	padding-top: 6px;
-	padding-left: 8px;
+	padding-top: 12px;
+	padding-left: 10px;
 }
 
 header {
 	/*HEADER BACKGROUND
 	/*border: 2px dotted orange;*/
-	height: 64px;
-  background-color: hsl(0,0%,90%);
+	height: 68px;
+  background-color: #050002;
   box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
     inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
     inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
