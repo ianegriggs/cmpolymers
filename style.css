@@ -109,13 +109,13 @@ header {
 	/*border: 2px dotted orange;*/
 	height: 70px;
   background-color: #050002;
-  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+/*  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
     inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
     inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
     inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
     
     hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
-    hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+    hsla(0,0%,100%,.5) 0  5px 6px 4px; *//* outer HL */ 
   
   transition: color .2s;
 }
@@ -138,7 +138,7 @@ nav a {
 	bottom: 1px;
 	width: 100px;
 	background-color: black;
-	border-right: 1px solid #ccc;
+	border-right: 1px groove #ccc;
 	display: inline-block;
 	color: #ccc;
 	text-decoration: none;
@@ -210,10 +210,7 @@ footer {
 }
 
 section {
-	max-width: 600px;
-	background-color: #177133;
-	margin-top: 50px;
-	margin-left: 300px;
+	margin: 0 auto;
 }
 
 article {
@@ -371,7 +368,9 @@ background: linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 	max-width: 40%;
+	height: 50%;
 	margin: 0 auto;
+	font-family: verdana;
 }
 
 .hark-player {
@@ -382,13 +381,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: inline;
 }
 
-#cory {
-	margin-left: 500px;
-}
-
-#carl {
-	margin-left: 530px;
-}
 
 h1.slogan {
 	text-align: center;
@@ -416,15 +408,31 @@ h1.slogan {
 	height: 1000px;
 }
 
-#bio {
-	height: 170px;
-	width: 170px;
+p.bio {
+	height: 218px;
+	width: 480px;
+	font-size: 120%;
+	font-weight: bold;
+	margin: 0 auto;
 	background: white;
-	border: 2px solid blue;
-
+	text-decoration: none;
+	padding-right: 20px;
+	padding-left: 10px;
 }
 
-#bio-cory {
+.mantra {
+	width: 50%;
+	margin: 0 auto;
+	font-size: 130%;
+	font-weight: bold;
+	background-color: white;
+	}
+
+.management {
+	color: black;
+}
+
+/*#bio-cory {
 	height: 170px;
 	width: 170px;
 	background: white;
@@ -433,7 +441,28 @@ h1.slogan {
 	margin-top: 40px;
 	margin-right: 
 }
-
+*/
 #height-perspective {
 	height: 600px;
 }
+
+.headshot {
+	display: block;
+	float: left;
+	margin-left: 200px;
+	margin-right: 20px;
+}
+
+#carl {
+	position: relative;
+	left: 40px;
+}
+
+h1 #expand {
+	white-space: nowrap;
+}
+
+.connect {
+	font-weight: bolder;
+	color: black;
+	}
