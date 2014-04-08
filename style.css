@@ -118,6 +118,7 @@ header {
     hsla(0,0%,100%,.5) 0  5px 6px 4px; *//* outer HL */ 
   
   transition: color .2s;
+  position: relative;
 }
 
 nav {
@@ -147,22 +148,6 @@ nav a {
 nav a:hover {
 	background: #ccc;
 	color: black;
-}
-
-
-/*SOCIAL BUTTONS*/
-
-#social-buttons {
-	/*border: 2px solid red;*/
-	display: inline;
-	width: 80px;
-	height: 40px;
-	float: right;
-	clear: right;
-	margin: 0px 300px 120px 0px;
-	position: absolute;
-	top: 22px;
-	left: 1050px;
 }
 
 /*PARAGRAPH*/
@@ -368,9 +353,11 @@ background: linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 	max-width: 40%;
-	height: 50%;
+	height: 60%;
 	margin: 0 auto;
 	font-family: verdana;
+	padding-top: 2px;
+	padding-left: 4px;
 }
 
 .hark-player {
@@ -385,6 +372,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 h1.slogan {
 	text-align: center;
 	color: white;
+		color:white;
+text-shadow:2px 2px 4px #000000;
 /*	background: -moz-linear-gradient(45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 77%, rgba(255,255,255,0) 100%);*/ /* FF3.6+ */
 /*	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(77%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));*/ /* Chrome,Safari4+ */
 /*	background: -webkit-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 77%,rgba(255,255,255,0) 100%);*/ /* Chrome10+,Safari5.1+ */
@@ -424,8 +413,11 @@ p.bio {
 	width: 50%;
 	margin: 0 auto;
 	font-size: 130%;
-	font-weight: bold;
-	background-color: white;
+	color: white;
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+	background-color: blue;
+	opacity: .5;
+
 	}
 
 .management {
@@ -466,3 +458,34 @@ h1 #expand {
 	font-weight: bolder;
 	color: black;
 	}
+
+.banner {
+	font-weight: bolder;
+	color:white;
+text-shadow:2px 2px 4px #000000;
+}
+
+.tagline {
+		color:white;
+text-shadow:2px 2px 4px #000000;
+}
+
+.twitter-handle {
+	text-decoration: none;
+	color: black;
+}
+
+#twitter-button {
+	position: relative;
+	bottom: 5px;
+	margin-left: 100px;
+}
+
+a.twitter {
+	float: right;
+	position: relative;
+	display: block;
+	float: right;
+	bottom: 100px;
+	right: 270px;
+}

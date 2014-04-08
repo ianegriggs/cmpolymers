@@ -10,7 +10,7 @@ header {
 	/*border: 2px dotted orange;*/
 	height: 68px;
   background-color: #050002;
-  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+ /* box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
     inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
     inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
     inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
@@ -18,7 +18,7 @@ header {
     hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
     hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
   
-  transition: color .2s;
+  /*transition: color .2s;*/*/
 }
 
 nav {
@@ -40,7 +40,7 @@ nav a {
 	bottom: 1px;
 	width: 100px;
 	background-color: black;
-	border-right: 1px solid #ccc;
+	border-right: 1px groove #ccc;
 	display: inline-block;
 	color: #ccc;
 	text-decoration: none;
@@ -50,6 +50,7 @@ nav a:hover {
 	background: #ccc;
 	color: black;
 }
+
 /*SOCIAL BUTTONS*/
 
 #social-buttons {
@@ -299,14 +300,8 @@ footer {
 
 h1 {
 	text-align: center;
-	color: black;
-	background: -moz-linear-gradient(45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 77%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(77%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 77%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 77%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 77%,rgba(255,255,255,0) 100%); /* IE10+ */
-	background: linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 77%,rgba(255,255,255,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	color: white;
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 	/*border: 3px solid white;*/
 	margin: 0 auto;
 	margin-top: 10px;
@@ -314,6 +309,9 @@ h1 {
 	max-width: 500px;
 	font-size: 24pt;
 	padding: 2px;
+}
+
+
 }
 
 #header {
