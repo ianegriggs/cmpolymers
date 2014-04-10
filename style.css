@@ -124,7 +124,7 @@ header {
 nav {
 /*	border: 2px solid green;*/
 	text-align: center;
-	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+	font-family: 'Arial', Helvetica, Arial, sans-serif;
 	height: 45px;
 	width: 600px;
 	margin: 0 auto;
@@ -295,14 +295,12 @@ article {
 
 form {
 	/*border: 3px dotted red;*/
-	width: 430px;
-	height: 410px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 30px;
+	width: 500px;
+	height: 525px;
+	padding: 2px 20px 0;
 	margin: 0 auto;
-	border: 4px groove blue;
-	border-radius: 30px;
+	border: 1px solid green;
+	border-radius: 7px;
 background: #fcfff4; /* Old browsers */
 background: -moz-linear-gradient(top,  #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(40%,#dfe5d7), color-stop(100%,#b3bead)); /* Chrome,Safari4+ */
@@ -311,15 +309,21 @@ background: -o-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Op
 background: -ms-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+position: relative;
+bottom: 10px;
 }
 
 input {
 	display: block;
+	line-height: 25px;
+	font-weight: bold;	
+	margin: 0 auto;
 }
 
 textarea {
 	width: 390px;
-	margin-top: 10px;
+	margin-left: 50px;
+	font-weight: bold;
 }
 
 #fullname-enter-field {
@@ -338,8 +342,7 @@ textarea {
 }
 
 #submit-button {
-	margin-top: 10px;
-	margin-left: 180px;
+	margin: 0 auto;
 }
 
 h4 {
@@ -369,6 +372,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 #type-of-scrap {
 	display: inline;
+	margin-left: 50px;
 }
 
 
@@ -388,7 +392,8 @@ text-shadow:2px 2px 4px #000000;
 }
 
 .form-div {
-	height: 500px;
+	height: 550px;
+	line-height: 20px;
 }
 
 .footer-pushdown {
@@ -416,10 +421,11 @@ p.bio {
 	width: 50%;
 	height: 40%;
 	margin: 0 auto;
-	font-size: 130%;
+	font-size: 110%;
 	font-weight: bolder;
 	color: black;
 	font-family: 'verdana', Helvetica, Arial, sans-serif;
+	font-style: italic;
 
 	}
 
@@ -436,6 +442,10 @@ p.bio {
 .management {
 	color: black;
 	font-family: 'Allerta', Helvetica, Arial, sans-serif;
+}
+
+#we-are {
+	font-size: 310%;
 }
 
 /*#bio-cory {
@@ -475,8 +485,10 @@ h1 #expand {
 
 .banner {
 	font-weight: bolder;
+	font-size: 220%;
 	color:white;
 text-shadow:2px 2px 4px #000000;
+background-color: green;
 }
 
 .tagline {
@@ -502,4 +514,41 @@ a.twitter {
 	float: right;
 	bottom: 100px;
 	right: 270px;
+}
+
+.quote-directions {
+	font-family: 'Arial Black', Helvetica, Arial, sans-serif;
+	font-style: italic;
+}
+
+.select-request {
+	text-indent: 10px;
+	font-weight: bolder;
+}
+
+#hot {
+	color: red;
+}
+
+#president {
+	font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+}
+
+#vp {
+	font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+}
+
+.headshot-cory {
+	float: right;
+	margin-right: 240px;
+	margin-top: 8px;
+	position: relative;
+	left: 3px;
+	width: 150px;
+}
+
+#credit-references {
+	text-align: center;
+	position: relative;
+	bottom: 25px;
 }
