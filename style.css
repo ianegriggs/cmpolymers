@@ -124,6 +124,7 @@ header {
 nav {
 /*	border: 2px solid green;*/
 	text-align: center;
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 	height: 45px;
 	width: 600px;
 	margin: 0 auto;
@@ -146,8 +147,10 @@ nav a {
 }
 
 nav a:hover {
-	background: #ccc;
-	color: black;
+	background: blue;
+	color: white;
+	border-right: 1px groove blue;
+
 }
 
 /*PARAGRAPH*/
@@ -399,29 +402,40 @@ text-shadow:2px 2px 4px #000000;
 
 p.bio {
 	height: 218px;
-	width: 480px;
+	width: 460px;
 	font-size: 120%;
 	font-weight: bold;
 	margin: 0 auto;
-	background: white;
 	text-decoration: none;
 	padding-right: 20px;
 	padding-left: 10px;
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 }
 
 .mantra {
 	width: 50%;
+	height: 40%;
 	margin: 0 auto;
 	font-size: 130%;
-	color: white;
-	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-	background-color: blue;
-	opacity: .5;
+	font-weight: bolder;
+	color: black;
+	font-family: 'verdana', Helvetica, Arial, sans-serif;
 
+	}
+
+	#hide-decoration {
+		text-decoration: none;
+		color: black;
+	}
+
+	.upper {
+		background-color: blue
+		max-width: 70%;
 	}
 
 .management {
 	color: black;
+	font-family: 'Allerta', Helvetica, Arial, sans-serif;
 }
 
 /*#bio-cory {
