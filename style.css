@@ -101,7 +101,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3355ff', end
 	width: 50px;
 	height: 50px;
 	padding-top: 12px;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 header {
@@ -124,12 +124,13 @@ header {
 nav {
 /*	border: 2px solid green;*/
 	text-align: center;
-	font-family: 'Arial', Helvetica, Arial, sans-serif;
+font-family: 'LUCIDA GRANDE ', Helvetica, Arial, sans-serif;
 	height: 45px;
 	width: 600px;
 	margin: 0 auto;
 	position: relative;
 	bottom: 50px;
+	font-size: 18px;
 }
 
 nav a {
@@ -285,9 +286,11 @@ article {
 #initials {
 	font-size: 275%;
 	position: relative;
-	bottom: 135px;
-	left: 115px;
+	bottom: 140px;
+	left: 111px;
 	z-index: 1;
+	font-family: 'arial black', Helvetica, Arial, sans-serif;
+	font-style: bolder;
 }
    
 
@@ -359,7 +362,7 @@ background: linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 	max-width: 40%;
-	height: 60%;
+	height: 55%;
 	margin: 0 auto;
 	font-family: verdana;
 	padding-top: 2px;
@@ -446,6 +449,7 @@ p.bio {
 
 #we-are {
 	font-size: 310%;
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 /*#bio-cory {
@@ -551,4 +555,13 @@ a.twitter {
 	text-align: center;
 	position: relative;
 	bottom: 25px;
+}
+
+#bond {
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+	font-size: 220%;
+}
+
+#connect-with {
+	text-indent: 15px;
 }

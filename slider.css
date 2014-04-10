@@ -2,35 +2,36 @@
 	width: 50px;
 	height: 50px;
 	padding-top: 12px;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 header {
 	/*HEADER BACKGROUND
 	/*border: 2px dotted orange;*/
-	height: 68px;
+	height: 70px;
   background-color: #050002;
- /* box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+/*  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
     inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
     inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
     inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
     
     hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
-    hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+    hsla(0,0%,100%,.5) 0  5px 6px 4px; *//* outer HL */ 
   
-  /*transition: color .2s;*/*/
+  transition: color .2s;
+  position: relative;
 }
 
 nav {
 /*	border: 2px solid green;*/
 	text-align: center;
+	font-family: 'LUCIDA GRANDE ', Helvetica, Arial, sans-serif;
 	height: 45px;
 	width: 600px;
 	margin: 0 auto;
 	position: relative;
 	bottom: 50px;
-	font-size: 155%;
-	font-size: arial;
+	font-size: 18px;
 }
 
 nav a {
@@ -48,8 +49,10 @@ nav a {
 }
 
 nav a:hover {
-	background: #ccc;
-	color: black;
+	background: blue;
+	color: white;
+	border-right: 1px groove blue;
+
 }
 
 /*SOCIAL BUTTONS*/
@@ -63,8 +66,8 @@ nav a:hover {
 	clear: right;
 	margin: 0px 300px 120px 0px;
 	position: absolute;
-	top: 22px;
-	left: 1050px;
+	top: 12px;
+	right: 50px;
 }
 
 #flakes-background {
@@ -94,7 +97,7 @@ body {
     height: 100%;
     overflow: hidden;
     position: relative;
-}
+ }
 
 #slider #slides > div {
     list-style: none;
@@ -303,13 +306,11 @@ h1 {
 	text-align: center;
 	color: white;
 	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-	/*border: 3px solid white;*/
 	margin: 0 auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
 	max-width: 500px;
 	font-size: 24pt;
-	padding: 2px;
+	position: relative;
+	top: 15px;
 }
 
 
