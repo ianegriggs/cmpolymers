@@ -411,10 +411,8 @@ p.bio {
 	width: 460px;
 	font-size: 120%;
 	font-weight: bold;
-	margin: 0 auto;
 	text-decoration: none;
-	padding-right: 20px;
-	padding-left: 10px;
+	display: inline;
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 }
 
@@ -463,17 +461,14 @@ p.bio {
 	height: 600px;
 }
 
-.headshot {
+.headshot #carl {
 	display: block;
-	float: left;
-	margin-left: 200px;
-	margin-right: 20px;
 }
-
+/*
 #carl {
 	position: relative;
 	left: 40px;
-}
+}*/
 
 h1 #expand {
 	white-space: nowrap;
@@ -538,13 +533,8 @@ a.twitter {
 	font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
 }
 
-.headshot-cory {
-	float: right;
-	margin-right: 240px;
-	margin-top: 8px;
-	position: relative;
-	left: 3px;
-	width: 150px;
+.headshot#cory {
+	display: block;
 }
 
 #credit-references {
