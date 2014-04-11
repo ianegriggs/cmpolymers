@@ -105,8 +105,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3355ff', end
 }
 
 header {
-	/*HEADER BACKGROUND
-	/*border: 2px dotted orange;*/
+	
+	border-bottom: 2px groove #ccc;
 	height: 70px;
   background-color: #050002;
 /*  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
@@ -196,6 +196,8 @@ footer {
 	height: 40px;
 	color: white;
 	background: black;
+	padding-top: 10px;
+	margin-top: 25px;
 }
 
 section {
@@ -360,11 +362,11 @@ background: -ms-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,
 background: linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-	max-width: 40%;
-	height: 55%;
+	max-width: 55%;
+	height: 65%;
 	margin: 0 auto;
 	font-family: verdana;
-	padding-top: 2px;
+	padding-top: 40px;
 	padding-left: 4px;
 }
 
@@ -407,12 +409,13 @@ text-shadow:2px 2px 4px #000000;
 }
 
 p.bio {
-	height: 218px;
-	width: 460px;
+	height: 225px;
+	width:100%;
 	font-size: 120%;
 	font-weight: bold;
 	text-decoration: none;
-	display: inline;
+	background-color: orange;
+	margin: 0 auto;
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 }
 
@@ -439,7 +442,14 @@ p.bio {
 
 .management {
 	color: black;
+	background-color: yellow;
 	font-family: 'Allerta', Helvetica, Arial, sans-serif;
+}
+
+div.management-container {
+	margin: 0 auto;
+	width: 50%;
+	background-color: white;
 }
 
 #we-are {
@@ -460,15 +470,6 @@ p.bio {
 #height-perspective {
 	height: 600px;
 }
-
-.headshot #carl {
-	display: block;
-}
-/*
-#carl {
-	position: relative;
-	left: 40px;
-}*/
 
 h1 #expand {
 	white-space: nowrap;
@@ -497,21 +498,6 @@ text-shadow:2px 2px 4px #000000;
 	color: black;
 }
 
-#twitter-button {
-	position: relative;
-	bottom: 5px;
-	margin-left: 100px;
-}
-
-a.twitter {
-	float: right;
-	position: relative;
-	display: block;
-	float: right;
-	bottom: 100px;
-	right: 270px;
-}
-
 .quote-directions {
 	font-family: 'Arial Black', Helvetica, Arial, sans-serif;
 }
@@ -533,9 +519,6 @@ a.twitter {
 	font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
 }
 
-.headshot#cory {
-	display: block;
-}
 
 #credit-references {
 	text-align: center;
@@ -544,12 +527,13 @@ a.twitter {
 }
 
 #bond {
-	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+	text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
 	font-size: 220%;
+	color: black;
 }
 
 #connect-with {
-	text-indent: 15px;
+	text-align: center;
 }
 #city {
 	display: inline-block;
@@ -561,4 +545,8 @@ a.twitter {
 	display: inline-block;
 	position: relative;
 	left: 30px;
+}
+
+.headshot {
+	float: left;
 }
