@@ -85,7 +85,7 @@ margin: 0;
 
 #screen {
 
-	height: 600px;
+	height: 100%;
 background: rgba(51,85,255,1);
 background: -moz-radial-gradient(center, ellipse cover, rgba(51,85,255,1) 0%, rgba(51,85,255,0.95) 5%, rgba(34,0,158,0.27) 71%, rgba(34,0,158,0.05) 92%);
 background: -webkit-gradient(radial, center center, 0px, center center, 100%, , color-stop(0%, rgba(51,85,255,1)), color-stop(5%, rgba(51,85,255,0.95)), color-stop(71%, rgba(34,0,158,0.27)), color-stop(92%, rgba(34,0,158,0.05)));
@@ -197,7 +197,6 @@ footer {
 	color: white;
 	background: black;
 	padding-top: 10px;
-	margin-top: 25px;
 }
 
 section {
