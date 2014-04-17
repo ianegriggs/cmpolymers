@@ -553,3 +553,7 @@ text-shadow:2px 2px 4px #000000;
 	margin-right: 10px;
 	margin-left: 10px;
 }
+
+.menu-icon {
+	display: none;
+}
