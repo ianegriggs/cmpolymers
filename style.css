@@ -86,6 +86,7 @@ margin: 0;
 #screen {
 
 	height: 100%;
+	width: auto;
 background: rgba(51,85,255,1);
 background: -moz-radial-gradient(center, ellipse cover, rgba(51,85,255,1) 0%, rgba(51,85,255,0.95) 5%, rgba(34,0,158,0.27) 71%, rgba(34,0,158,0.05) 92%);
 background: -webkit-gradient(radial, center center, 0px, center center, 100%, , color-stop(0%, rgba(51,85,255,1)), color-stop(5%, rgba(51,85,255,0.95)), color-stop(71%, rgba(34,0,158,0.27)), color-stop(92%, rgba(34,0,158,0.05)));
@@ -102,6 +103,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3355ff', end
 	height: 50px;
 	padding-top: 12px;
 	padding-left: 20px;
+	z-index: 2;
 }
 
 header {
@@ -124,7 +126,7 @@ header {
 nav {
 /*	border: 2px solid green;*/
 	text-align: center;
-font-family: 'LUCIDA GRANDE ', Helvetica, Arial, sans-serif;
+	font-family: 'LUCIDA GRANDE ', Helvetica, Arial, sans-serif;
 	height: 45px;
 	width: 600px;
 	margin: 0 auto;
@@ -556,4 +558,15 @@ text-shadow:2px 2px 4px #000000;
 
 .menu-icon {
 	display: none;
+}
+
+#penn-state {
+	display: block;
+	margin: 0 auto;
+}
+
+.nolink {
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
 }
