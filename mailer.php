@@ -7,16 +7,16 @@
   ###################################
  
   // Set email address to send to i.e: you@yoursite.com
-  $sendTo       = 'you@yoursite.com';
+  $sendTo       = 'ian@cmpolyers.com';
  
   // Set email subject (appears as subject)
-  $subject      = 'Exceptional Realty - Contact Form Submission';
+  $subject      = 'Quote Request - Contact Submission';
  
   //Set link to your success page
-  $success_page = 'contact.php?s=success';
+  $success_page = 'get-a-quote.php?s=success';
  
   //Set link to your error page
-  $error_page   = 'contact.php?s=error';
+  $error_page   = 'get-a-quote.php?s=error';
  
  
   ########## No need to touch the code below this line! ##########

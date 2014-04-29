@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<title>CM Polymers</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="responsive.css">
 </head>
 <body id="crushed-bottles-background">
 	<div class="wrapper">
@@ -14,7 +13,7 @@
 					<img id="logo" src="images/site-logo.png" alt="CM Polymers" title="Welcome to CM Polymers"></a>
 			<nav>
 				<a href="for-sale.html">For Sale</a>
-				<a href="get-a-quote.html">Get a Quote</a>
+				<a href="#">Get a Quote</a>
 				<a href="about-us.html">About Us</a>
 				<a href="contact-us.html">Contact</a>
 				<a class="menu-icon">&#9776;</a>
@@ -30,7 +29,16 @@
 		<br> <br>
 		<h1 class="banner">Recycle Your Scrap Into Cash</h1>
 		<div class="form-div">
-			<form action="action="mailto:ian@cmpolymers.com method="post">
+
+<?php if ($_GET['s'] == 'success') { ?>
+	<p>Thank you.  Your message has been successfully sent, and we will be back to you shortly with a response.</p>
+<?php } else if ($_GET['s'] == 'error') { ?>
+	<p>Error.  Your message was not sent.  Make sure you type in the proper verification numbers. <a href="get-a-quote.php">Click here to try again.</a>
+	If issues persist, please email the webmaster at support@cmypolymers.com</p>
+<?php } else { ?>
+
+
+			<form action="mailer.php="mailto:ian@cmpolymers.com method="post">
 				<h4 class="quote-directions">Have Some Post Industrial Plastic to Sell?<br>Good, Because We're Always Looking to Buy!<br><br>Fill out the form below and we'll get right back to you.</h4>
 					<input id="fullname-enter-field" type="text" name="full-name" placeholder="Your Name" required>
 					<input id="email-enter-field" type="email" name="email" placeholder="Your Email Address" required>
@@ -105,9 +113,17 @@
 					<input class="pic" type="file" name="pic" accept="image/*">
 					<input class="pic" type="file" name="pic" accept="image/*">
 					<input class="pic" type="file" name="pic" accept="image/*">
-					<input class="pic" type="file" name="pic" accept="image/*"> <br> <br> <br>
+					<input class="pic" type="file" name="pic" accept="image/*"> 
+					<br> <br> <br>
+
+					<input type="text" name="verify" class="verify-box" placeholder="please verify you're human"> 
+					<img class="verify" src="verificationimage.php?<?php echo rand(0,9999) alt="verification image" ?>">
+
+					<br> <br> <br>
 					<input id="submit-button" type="submit" name="submit">
 				</form>
+
+				<?php } ?>
 			</div> 
 		</div> <!-- WRAPPER CLOSED -->
 

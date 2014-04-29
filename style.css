@@ -86,7 +86,7 @@ margin: 0;
 #screen {
 
 	height: 100%;
-	width: auto;
+	width: 100%;
 background: rgba(51,85,255,1);
 background: -moz-radial-gradient(center, ellipse cover, rgba(51,85,255,1) 0%, rgba(51,85,255,0.95) 5%, rgba(34,0,158,0.27) 71%, rgba(34,0,158,0.05) 92%);
 background: -webkit-gradient(radial, center center, 0px, center center, 100%, , color-stop(0%, rgba(51,85,255,1)), color-stop(5%, rgba(51,85,255,0.95)), color-stop(71%, rgba(34,0,158,0.27)), color-stop(92%, rgba(34,0,158,0.05)));
@@ -121,6 +121,7 @@ header {
   
   transition: color .2s;
   position: relative;
+  min-width: 40%;
 }
 
 nav {
@@ -129,8 +130,8 @@ nav {
 	font-family: 'LUCIDA GRANDE ', Helvetica, Arial, sans-serif;
 	height: 45px;
 	width: 600px;
-	margin: 0 auto;
 	position: relative;
+	left: 300px;
 	bottom: 50px;
 	font-size: 18px;
 }
@@ -410,12 +411,11 @@ text-shadow:2px 2px 4px #000000;
 }
 
 p.bio {
-	height: 100%;
-	width: 70%;
-	font-size: 120%;
+	width: 700px;
+	font-size: 110%;
 	font-weight: bold;
 	text-decoration: none;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 	clear: right;
 }
