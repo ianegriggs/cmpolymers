@@ -12,11 +12,11 @@
 			<a href="index.html">		
 					<img id="logo" src="images/site-logo.png" alt="CM Polymers" title="Welcome to CM Polymers"></a>
 			<nav>
-				<a href="for-sale.html">For Sale</a>
+				<!-- <a href="for-sale.html">For Sale</a> -->
 				<a href="#">Get a Quote</a>
 				<a href="about-us.html">About Us</a>
 				<a href="contact-us.html">Contact</a>
-				<a class="menu-icon">&#9776;</a>
+				<!-- <a class="menu-icon">&#9776;</a> -->
 			</nav>
 		</header>
 	</div> <!-- WRAPPER CLOSED -->
